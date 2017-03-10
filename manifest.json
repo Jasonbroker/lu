@@ -1,0 +1,16 @@
+{
+  "name": "Lu",
+  "version": "1.0",
+  "manifest_version":2,
+  "description": "The chrome extension for Lu.com.",
+  "permissions": [
+     "activeTab",
+     "https://www.lup2p.com/lup2p/p2p*"
+  ],
+  "content_scripts":[
+    {
+        "matches":["https://www.lup2p.com/lup2p/p2p*"],
+        "js":["jquery-3.1.0.min.js","script.js"]
+    }
+  ]
+}
